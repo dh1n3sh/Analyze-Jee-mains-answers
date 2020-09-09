@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button {
+            height: 40px;
+            width: 100px;
+            margin: 10px;
+            outline: none;
+        }
+
+        html,
+        body {
+            height: 200px;
+            width: 350px;
+            margin: 0px;
+        }
+
+        p {
+            display: inline;
+        }
+
+        .center {
+            margin: auto;
+            width: 80%;
+            padding: 0 px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align:center">JEE MAINS Analysis Tool</h1>
+        <div class="center">
+            <button id="getAnswers">Save Answers</button>
+            <p id='key_message'>Answer key not saved yet!</p>
+        </div>
+        </br>
+        <div class='center'>
+            <button id="inject">Analyze Answers</button>
+            <p id='inject_message'>Answers not Analysed yet!</p>
+        </div>
+        <script src="localsave.js"></script>
+        <script src="inject.js"></script>
+        <script src="saveAnswers.js"></script>
+        <script src="pop.js"></script>
+    </div>
+</body>
+
+</html>

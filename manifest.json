@@ -1,0 +1,23 @@
+{
+    "name": "Jee mains Analysis",
+    "version": "1.0",
+    "description": "Compare your answers with answer key and generate analysis",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
+    "page_action": {
+        "default_popup": "pop.html",
+        "default_icon": {
+            "64": "test.png"
+        }
+    }
+}
