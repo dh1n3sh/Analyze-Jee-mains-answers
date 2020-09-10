@@ -77,6 +77,9 @@ function inject(answers) {
             var yourAnswer = b[b.length - 1].cells[1].textContent
             // answers[qid] = b
             // console.log('sa')
+            correctAnswer = parseFloat(correctAnswer)
+            yourAnswer = parseFloat(yourAnswer)
+            // console.log(parseFloat(correctAnswer), parseFloat(yourAnswer), typeof (correctAnswer), typeof (yourAnswer), correctAnswer == yourAnswer)
             var correctAnswer = answers[qid]
             addRow('Correct Answer : ' + correctAnswer)
             addRow('Your Answer : ' + yourAnswer)
